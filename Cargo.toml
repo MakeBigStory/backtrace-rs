@@ -36,7 +36,7 @@ libc = "0.2"
 winapi = { version = "0.3.3", optional = true, features = ["std", "dbghelp", "processthreadsapi", "winnt", "minwindef"] }
 
 [target.'cfg(all(unix, not(target_os = "fuchsia"), not(target_os = "emscripten"), not(target_os = "macos"), not(target_os = "ios")))'.dependencies]
-backtrace-sys = { path = "backtrace-sys", version = "0.1.17", optional = true }
+backtrace-sys = { path = "backtrace-sys", version = "0.1.23", optional = true }
 
 # Each feature controls the two phases of finding a backtrace: getting a
 # backtrace and then resolving instruction pointers to symbols. The default
